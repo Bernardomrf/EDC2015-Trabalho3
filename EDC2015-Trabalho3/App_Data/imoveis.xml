@@ -1,5 +1,5 @@
 <properties>
-    <property>
+  <property>
         <land_register>2</land_register>
         <address>
             <city>Viseu</city>
@@ -7,13 +7,12 @@
           <port_number>73</port_number>
         </address>
       <value>100000</value>
-      <owner>
-        <tax_number>21339212</tax_number>
-        <name>Bernardo Ferreira</name>
-        <purchase_date>2015-06-20</purchase_date>
-      </owner>
+      <owners>
+        <owner tax_number="29812478" name="Alexandre Ribeiro" purchase_date="2009-02-15" sale_date="2015-06-20"/>
+        <owner tax_number="21339212" name="Bernardo Ferreira" purchase_date="2015-06-20" sale_date=""/>
+      </owners>
     </property>
-    <property>
+  <property>
       <land_register>4</land_register>
       <address>
         <city>Cascais</city>
@@ -21,13 +20,11 @@
         <port_number>1</port_number>
       </address>
       <value>500000</value>
-      <owner>
-        <tax_number>23992948</tax_number>
-        <name>Guilherme Sousa</name>
-        <purchase_date>2012-05-21</purchase_date>
-      </owner>
+      <owners>
+        <owner tax_number="23992948" name="Guilherme Sousa" purchase_date="2012-05-21" sale_date=""/>
+      </owners>
     </property>
-    <property>
+  <property>
       <land_register>6</land_register>
       <address>
         <city>Lisboa</city>
@@ -35,13 +32,11 @@
         <port_number>12</port_number>
       </address>
       <value>55000</value>
-      <owner>
-        <tax_number>21339212</tax_number>
-        <name>Bernardo Ferreira</name>
-        <purchase_date>2010-06-22</purchase_date>
-      </owner>
+      <owners>
+        <owner tax_number="21339212" name="Bernardo Ferreira" purchase_date="2010-06-22" sale_date=""/>
+      </owners>
     </property>
-    <property>
+  <property>
       <land_register>8</land_register>
       <address>
         <city>Albufeira</city>
@@ -49,13 +44,11 @@
         <port_number>42</port_number>
       </address>
       <value>202000</value>
-      <owner>
-        <tax_number>23992948</tax_number>
-        <name>Guilherme Sousa</name>
-        <purchase_date>2012-05-21</purchase_date>
-      </owner>
+      <owners>
+        <owner tax_number="23992948" name="Guilherme Sousa" purchase_date="2012-05-21" sale_date=""/>
+      </owners>
     </property>
-    <property>
+  <property>
       <land_register>10</land_register>
       <address>
         <city>Viseu</city>
@@ -63,13 +56,11 @@
         <port_number>82</port_number>
       </address>
       <value></value>
-      <owner>
-        <tax_number>21339212</tax_number>
-        <name>Bernardo Ferreira</name>
-        <purchase_date>2010-06-22</purchase_date>
-      </owner>
+      <owners>
+        <owner tax_number="21339212" name="Bernardo Ferreira" purchase_date="2010-06-22" sale_date=""/>
+      </owners>
     </property>
-    <property>
+  <property>
       <land_register>12</land_register>
       <address>
         <city>Lisboa</city>
@@ -77,41 +68,36 @@
         <port_number>1</port_number>
       </address>
       <value>245000</value>
-      <owner>
-        <tax_number>29812478</tax_number>
-        <name>Alexandre Ribeiro</name>
-        <purchase_date>2009-02-15</purchase_date>
-      </owner>
+      <owners>
+        <owner tax_number="29812478" name="Alexandre Ribeiro" purchase_date="2009-02-15" sale_date=""/>
+      </owners>
     </property>
   <property>
     <land_register>1</land_register>
     <address>
       <city>Aveiro</city>
       <street>Rua da Estação</street>
-      <port_number>15</port_number>
+      <port_number></port_number>
     </address>
         <value>50000</value>
-        <owner>
-            <tax_number>17394729</tax_number>
-            <name>Bruno Silva</name>
-            <purchase_date>2015-10-21</purchase_date>
-        </owner>
+        <owners>
+          <owner tax_number="81735621" name="Rui Ferreira" purchase_date="2003-01-29" sale_date="2015-10-21"/>
+          <owner tax_number="17394729" name="Bruno Silva" purchase_date="2015-10-21" sale_date=""/>
+        </owners>
     </property>
-    <property>
-        <land_register>15</land_register>
-        <address>
-          <city>Ovar</city>
-          <street>Rua da Madria</street>
-          <port_number>14</port_number>
-        </address>
-        <value>80000</value>
-        <owner>
-            <tax_number>47264927</tax_number>
-            <name>Rui Silva</name>
-            <purchase_date>2013-09-01</purchase_date>
-        </owner>
-    </property>
-    <property>
+  <property>
+    <land_register>15</land_register>
+    <address>
+      <city>Ovar</city>
+      <street>Rua da Madria</street>
+      <port_number>14</port_number>
+    </address>
+    <value>80000</value>
+    <owners>
+      <owner tax_number="47264927" name="Rui Silva" purchase_date="2013-09-01" sale_date=""/>
+    </owners>
+  </property>
+  <property>
       <land_register>3</land_register>
       <address>
         <city>Porto</city>
@@ -119,11 +105,9 @@
         <port_number>225</port_number>
       </address>
       <value>250000</value>
-      <owner>
-        <tax_number>82615153</tax_number>
-        <name>Sérgio Silva</name>
-        <purchase_date>2014-03-11</purchase_date>
-      </owner>
+      <owners>
+        <owner tax_number="82615153" name="Sérgio Silva" purchase_date="2014-03-11" sale_date=""/>
+      </owners>
     </property>
   <property>
     <land_register>5</land_register>
@@ -133,11 +117,9 @@
       <port_number>22</port_number>
     </address>
     <value>175000</value>
-    <owner>
-      <tax_number>17394729</tax_number>
-      <name>Bruno Silva</name>
-      <purchase_date>2011-03-19</purchase_date>
-    </owner>
+    <owners>
+      <owner tax_number="17394729" name="Bruno Silva" purchase_date="2011-03-19" sale_date=""/>
+    </owners>
   </property>
   <property>
     <land_register>7</land_register>
@@ -147,11 +129,9 @@
       <port_number>32</port_number>
     </address>
     <value>125000</value>
-    <owner>
-      <tax_number>48275625</tax_number>
-      <name>Ana Ferreira</name>
-      <purchase_date>2009-11-29</purchase_date>
-    </owner>
+    <owners>
+      <owner tax_number="48275625" name="Ana Ferreira" purchase_date="2009-11-29" sale_date=""/>
+    </owners>
   </property>
   <property>
     <land_register>9</land_register>
@@ -161,11 +141,9 @@
       <port_number>126</port_number>
     </address>
     <value>325000</value>
-    <owner>
-      <tax_number>48275625</tax_number>
-      <name>Ana Ferreira</name>
-      <purchase_date>2009-11-29</purchase_date>
-    </owner>
+    <owners>
+      <owner tax_number="48275625" name="Ana Ferreira" purchase_date="2009-11-29" sale_date=""/>
+    </owners>
   </property>
   <property>
     <land_register>11</land_register>
@@ -175,13 +153,11 @@
       <port_number>186</port_number>
     </address>
     <value>378000</value>
-    <owner>
-      <tax_number>81735621</tax_number>
-      <name>Rui Ferreira</name>
-      <purchase_date>2003-01-29</purchase_date>
-    </owner>
+    <owners>
+      <owner tax_number="81735621" name="Rui Ferreira" purchase_date="2003-01-29" sale_date=""/>
+    </owners>
   </property>
-   <property>
+  <property>
     <land_register>13</land_register>
     <address>
       <city>Aveiro</city>
@@ -189,11 +165,9 @@
       <port_number>152</port_number>
     </address>
     <value>126000</value>
-    <owner>
-      <tax_number>17362641</tax_number>
-      <name>Alvaro Cabral</name>
-      <purchase_date>2005-04-19</purchase_date>
-    </owner>
+    <owners>
+      <owner tax_number="17362641" name="Alvaro Cabral" purchase_date="2005-04-19" sale_date=""/>
+    </owners>
   </property>
 
 </properties>
