@@ -3,6 +3,7 @@
   <xsl:template match="properties">
     <properties>
       <xsl:for-each select="property">
+        <xsl:sort select="land_register" data-type="number"/>
         <property>
           <xsl:attribute name="land_register">
             <xsl:value-of select="land_register"/>
