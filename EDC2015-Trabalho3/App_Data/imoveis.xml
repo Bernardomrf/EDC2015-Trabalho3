@@ -6,12 +6,12 @@
             <street>Rua Nossa Senhora de Fátima</street>
           <port_number>73</port_number>
         </address>
-        <value>100000</value>
-        <owner>
-            <tax_number>21339212</tax_number>
-            <name>Bernardo Ferreira</name>
-            <purchase_date>2015-06-20</purchase_date>
-        </owner>
+      <value>100000</value>
+      <owner>
+        <tax_number>21339212</tax_number>
+        <name>Bernardo Ferreira</name>
+        <purchase_date>2015-06-20</purchase_date>
+      </owner>
     </property>
     <property>
       <land_register>4</land_register>
@@ -83,4 +83,117 @@
         <purchase_date>2009-02-15</purchase_date>
       </owner>
     </property>
+  <property>
+    <land_register>1</land_register>
+    <address>
+      <city>Aveiro</city>
+      <street>Rua da Estação</street>
+      <port_number>15</port_number>
+    </address>
+        <value>50000</value>
+        <owner>
+            <tax_number>17394729</tax_number>
+            <name>Bruno Silva</name>
+            <purchase_date>2015-10-21</purchase_date>
+        </owner>
+    </property>
+    <property>
+        <land_register>15</land_register>
+        <address>
+          <city>Ovar</city>
+          <street>Rua da Madria</street>
+          <port_number>14</port_number>
+        </address>
+        <value>80000</value>
+        <owner>
+            <tax_number>47264927</tax_number>
+            <name>Rui Silva</name>
+            <purchase_date>2013-09-01</purchase_date>
+        </owner>
+    </property>
+    <property>
+      <land_register>3</land_register>
+      <address>
+        <city>Porto</city>
+        <street>Avenida dos Aliados</street>
+        <port_number>225</port_number>
+      </address>
+      <value>250000</value>
+      <owner>
+        <tax_number>82615153</tax_number>
+        <name>Sérgio Silva</name>
+        <purchase_date>2014-03-11</purchase_date>
+      </owner>
+    </property>
+  <property>
+    <land_register>5</land_register>
+    <address>
+      <city>Espinho</city>
+      <street>Rua 19</street>
+      <port_number>22</port_number>
+    </address>
+    <value>175000</value>
+    <owner>
+      <tax_number>17394729</tax_number>
+      <name>Bruno Silva</name>
+      <purchase_date>2011-03-19</purchase_date>
+    </owner>
+  </property>
+  <property>
+    <land_register>7</land_register>
+    <address>
+      <city>Ovar</city>
+      <street>Rua de Timor</street>
+      <port_number>32</port_number>
+    </address>
+    <value>125000</value>
+    <owner>
+      <tax_number>48275625</tax_number>
+      <name>Ana Ferreira</name>
+      <purchase_date>2009-11-29</purchase_date>
+    </owner>
+  </property>
+  <property>
+    <land_register>9</land_register>
+    <address>
+      <city>Porto</city>
+      <street>Rua do centro da cidade</street>
+      <port_number>126</port_number>
+    </address>
+    <value>325000</value>
+    <owner>
+      <tax_number>48275625</tax_number>
+      <name>Ana Ferreira</name>
+      <purchase_date>2009-11-29</purchase_date>
+    </owner>
+  </property>
+  <property>
+    <land_register>11</land_register>
+    <address>
+      <city>Aveiro</city>
+      <street>Rua da Universidade</street>
+      <port_number>186</port_number>
+    </address>
+    <value>378000</value>
+    <owner>
+      <tax_number>81735621</tax_number>
+      <name>Rui Ferreira</name>
+      <purchase_date>2003-01-29</purchase_date>
+    </owner>
+  </property>
+   <property>
+    <land_register>13</land_register>
+    <address>
+      <city>Aveiro</city>
+      <street>Rua da Praia</street>
+      <port_number>152</port_number>
+    </address>
+    <value>126000</value>
+    <owner>
+      <tax_number>17362641</tax_number>
+      <name>Alvaro Cabral</name>
+      <purchase_date>2005-04-19</purchase_date>
+    </owner>
+  </property>
+
 </properties>
