@@ -1,16 +1,86 @@
 <properties>
     <property>
-        <land_register>1</land_register>
+        <land_register>2</land_register>
         <address>
-            <city>Aveiro</city>
-            <street>Rua da Estação</street>
-            <port_number>15</port_number>
+            <city>Viseu</city>
+            <street>Rua Nossa Senhora de Fátima</street>
+          <port_number>73</port_number>
         </address>
-        <value></value>
+        <value>100000</value>
         <owner>
-            <tax_number></tax_number>
-            <name></name>
-            <purchase_date></purchase_date>
+            <tax_number>21339212</tax_number>
+            <name>Bernardo Ferreira</name>
+            <purchase_date>2015-06-20</purchase_date>
         </owner>
+    </property>
+    <property>
+      <land_register>4</land_register>
+      <address>
+        <city>Cascais</city>
+        <street>Quinta do Conde</street>
+        <port_number>1</port_number>
+      </address>
+      <value>500000</value>
+      <owner>
+        <tax_number>23992948</tax_number>
+        <name>Guilherme Sousa</name>
+        <purchase_date>2012-05-21</purchase_date>
+      </owner>
+    </property>
+    <property>
+      <land_register>6</land_register>
+      <address>
+        <city>Lisboa</city>
+        <street>Avenida da República</street>
+        <port_number>12</port_number>
+      </address>
+      <value>55000</value>
+      <owner>
+        <tax_number>21339212</tax_number>
+        <name>Bernardo Ferreira</name>
+        <purchase_date>2010-06-22</purchase_date>
+      </owner>
+    </property>
+    <property>
+      <land_register>8</land_register>
+      <address>
+        <city>Albufeira</city>
+        <street>Rua Praia do Sol</street>
+        <port_number>42</port_number>
+      </address>
+      <value>202000</value>
+      <owner>
+        <tax_number>23992948</tax_number>
+        <name>Guilherme Sousa</name>
+        <purchase_date>2012-05-21</purchase_date>
+      </owner>
+    </property>
+    <property>
+      <land_register>10</land_register>
+      <address>
+        <city>Viseu</city>
+        <street>Rua de Santiago</street>
+        <port_number>82</port_number>
+      </address>
+      <value></value>
+      <owner>
+        <tax_number>21339212</tax_number>
+        <name>Bernardo Ferreira</name>
+        <purchase_date>2010-06-22</purchase_date>
+      </owner>
+    </property>
+    <property>
+      <land_register>12</land_register>
+      <address>
+        <city>Lisboa</city>
+        <street>Quinta de Cimafeita</street>
+        <port_number>1</port_number>
+      </address>
+      <value>245000</value>
+      <owner>
+        <tax_number>29812478</tax_number>
+        <name>Alexandre Ribeiro</name>
+        <purchase_date>2009-02-15</purchase_date>
+      </owner>
     </property>
 </properties>
