@@ -1,0 +1,16 @@
+<properties>
+    <property>
+        <land_register></land_register>
+        <address>
+            <city></city>
+            <street></street>
+            <port_number></port_number>
+        </address>
+        <value></value>
+        <owner>
+            <tax_number></tax_number>
+            <name></name>
+            <purchase_date></purchase_date>
+        </owner>
+    </property>
+</properties>
