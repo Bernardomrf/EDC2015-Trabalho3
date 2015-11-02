@@ -1,77 +1,77 @@
 <properties>
   <property>
-        <land_register>2</land_register>
-        <address>
-            <city>Viseu</city>
-            <street>Rua Nossa Senhora de Fátima</street>
-          <port_number>73</port_number>
-        </address>
-      <value>100000</value>
-      <owners>
-        <owner tax_number="29812478" name="Alexandre Ribeiro" purchase_date="2009-02-15" sale_date="2015-06-20"/>
-        <owner tax_number="21339212" name="Bernardo Ferreira" purchase_date="2015-06-20" sale_date=""/>
-      </owners>
-    </property>
+    <land_register>2</land_register>
+    <address>
+      <city>Viseu</city>
+      <street>Rua Nossa Senhora de Fátima</street>
+      <port_number>73</port_number>
+    </address>
+    <value>100000</value>
+    <owners>
+      <owner tax_number="29812478" name="Alexandre Ribeiro" purchase_date="2009-02-15" sale_date="2015-06-20" />
+      <owner tax_number="21339212" name="Bernardo Ferreira" purchase_date="2015-06-20" sale_date="" />
+    </owners>
+  </property>
   <property>
-      <land_register>4</land_register>
-      <address>
-        <city>Cascais</city>
-        <street>Quinta do Conde</street>
-        <port_number>1</port_number>
-      </address>
-      <value>500000</value>
-      <owners>
-        <owner tax_number="23992948" name="Guilherme Sousa" purchase_date="2012-05-21" sale_date=""/>
-      </owners>
-    </property>
+    <land_register>4</land_register>
+    <address>
+      <city>Cascais</city>
+      <street>Quinta do Conde</street>
+      <port_number>1</port_number>
+    </address>
+    <value>500000</value>
+    <owners>
+      <owner tax_number="23992948" name="Guilherme Sousa" purchase_date="2012-05-21" sale_date="" />
+    </owners>
+  </property>
   <property>
-      <land_register>6</land_register>
-      <address>
-        <city>Lisboa</city>
-        <street>Avenida da República</street>
-        <port_number>12</port_number>
-      </address>
-      <value>55000</value>
-      <owners>
-        <owner tax_number="21339212" name="Bernardo Ferreira" purchase_date="2010-06-22" sale_date=""/>
-      </owners>
-    </property>
+    <land_register>6</land_register>
+    <address>
+      <city>Lisboa</city>
+      <street>Avenida da República</street>
+      <port_number>12</port_number>
+    </address>
+    <value>55000</value>
+    <owners>
+      <owner tax_number="21339212" name="Bernardo Ferreira" purchase_date="2010-06-22" sale_date="" />
+    </owners>
+  </property>
   <property>
-      <land_register>8</land_register>
-      <address>
-        <city>Albufeira</city>
-        <street>Rua Praia do Sol</street>
-        <port_number>42</port_number>
-      </address>
-      <value>202000</value>
-      <owners>
-        <owner tax_number="23992948" name="Guilherme Sousa" purchase_date="2012-05-21" sale_date=""/>
-      </owners>
-    </property>
+    <land_register>8</land_register>
+    <address>
+      <city>Albufeira</city>
+      <street>Rua Praia do Sol</street>
+      <port_number>42</port_number>
+    </address>
+    <value>202000</value>
+    <owners>
+      <owner tax_number="23992948" name="Guilherme Sousa" purchase_date="2012-05-21" sale_date="" />
+    </owners>
+  </property>
   <property>
-      <land_register>10</land_register>
-      <address>
-        <city>Viseu</city>
-        <street>Rua de Santiago</street>
-        <port_number>82</port_number>
-      </address>
-      <value>200000</value>
-      <owners>
-        <owner tax_number="21339212" name="Bernardo Ferreira" purchase_date="2010-06-22" sale_date=""/>
-      </owners>
-    </property>
+    <land_register>10</land_register>
+    <address>
+      <city>Viseu</city>
+      <street>Rua de Santiago</street>
+      <port_number>82</port_number>
+    </address>
+    <value>200000</value>
+    <owners>
+      <owner tax_number="21339212" name="Bernardo Ferreira" purchase_date="2010-06-22" sale_date="" />
+    </owners>
+  </property>
   <property>
-      <land_register>12</land_register>
-      <address>
-        <city>Lisboa</city>
-        <street>Quinta de Cimafeita</street>
-        <port_number>1</port_number>
-      </address>
-      <value>245000</value>
-      <owners>
-        <owner tax_number="29812478" name="Alexandre Ribeiro" purchase_date="2009-02-15" sale_date=""/>
-      </owners>
-    </property>
+    <land_register>12</land_register>
+    <address>
+      <city>Lisboa</city>
+      <street>Quinta de Cimafeita</street>
+      <port_number>1</port_number>
+    </address>
+    <value>245000</value>
+    <owners>
+      <owner tax_number="29812478" name="Alexandre Ribeiro" purchase_date="2009-02-15" sale_date="" />
+    </owners>
+  </property>
   <property>
     <land_register>1</land_register>
     <address>
@@ -79,12 +79,12 @@
       <street>Rua da Estação</street>
       <port_number>15</port_number>
     </address>
-        <value>50000</value>
-        <owners>
-          <owner tax_number="81735621" name="Rui Ferreira" purchase_date="2003-01-29" sale_date="2015-10-21"/>
-          <owner tax_number="17394729" name="Bruno Silva" purchase_date="2015-10-21" sale_date=""/>
-        </owners>
-    </property>
+    <value>50000</value>
+    <owners>
+      <owner tax_number="81735621" name="Rui Ferreira" purchase_date="2003-01-29" sale_date="2015-10-21" />
+      <owner tax_number="17394729" name="Bruno Silva" purchase_date="2015-10-21" sale_date="" />
+    </owners>
+  </property>
   <property>
     <land_register>15</land_register>
     <address>
@@ -94,21 +94,21 @@
     </address>
     <value>80000</value>
     <owners>
-      <owner tax_number="47264927" name="Rui Silva" purchase_date="2013-09-01" sale_date=""/>
+      <owner tax_number="47264927" name="Rui Silva" purchase_date="2013-09-01" sale_date="" />
     </owners>
   </property>
   <property>
-      <land_register>3</land_register>
-      <address>
-        <city>Porto</city>
-        <street>Avenida dos Aliados</street>
-        <port_number>225</port_number>
-      </address>
-      <value>250000</value>
-      <owners>
-        <owner tax_number="82615153" name="Sérgio Silva" purchase_date="2014-03-11" sale_date=""/>
-      </owners>
-    </property>
+    <land_register>3</land_register>
+    <address>
+      <city>Porto</city>
+      <street>Avenida dos Aliados</street>
+      <port_number>225</port_number>
+    </address>
+    <value>250000</value>
+    <owners>
+      <owner tax_number="82615153" name="Sérgio Silva" purchase_date="2014-03-11" sale_date="" />
+    </owners>
+  </property>
   <property>
     <land_register>5</land_register>
     <address>
@@ -118,7 +118,7 @@
     </address>
     <value>175000</value>
     <owners>
-      <owner tax_number="17394729" name="Bruno Silva" purchase_date="2011-03-19" sale_date=""/>
+      <owner tax_number="17394729" name="Bruno Silva" purchase_date="2011-03-19" sale_date="" />
     </owners>
   </property>
   <property>
@@ -130,7 +130,7 @@
     </address>
     <value>125000</value>
     <owners>
-      <owner tax_number="48275625" name="Ana Ferreira" purchase_date="2009-11-29" sale_date=""/>
+      <owner tax_number="48275625" name="Ana Ferreira" purchase_date="2009-11-29" sale_date="" />
     </owners>
   </property>
   <property>
@@ -142,7 +142,7 @@
     </address>
     <value>325000</value>
     <owners>
-      <owner tax_number="48275625" name="Ana Ferreira" purchase_date="2009-11-29" sale_date=""/>
+      <owner tax_number="48275625" name="Ana Ferreira" purchase_date="2009-11-29" sale_date="" />
     </owners>
   </property>
   <property>
@@ -154,7 +154,7 @@
     </address>
     <value>378000</value>
     <owners>
-      <owner tax_number="81735621" name="Rui Ferreira" purchase_date="2003-01-29" sale_date=""/>
+      <owner tax_number="81735621" name="Rui Ferreira" purchase_date="2003-01-29" sale_date="" />
     </owners>
   </property>
   <property>
@@ -166,8 +166,16 @@
     </address>
     <value>126000</value>
     <owners>
-      <owner tax_number="17362641" name="Alvaro Cabral" purchase_date="2005-04-19" sale_date=""/>
+      <owner tax_number="17362641" name="Alvaro Cabral" purchase_date="2005-04-19" sale_date="" />
     </owners>
   </property>
-
+  <Property>
+    <land_register>16</land_register>
+    <address>
+      <city>Aveiro</city>
+      <street>Rua da Universidade</street>
+      <port_number>26</port_number>
+    </address>
+    <value>30000</value>
+  </Property>
 </properties>
