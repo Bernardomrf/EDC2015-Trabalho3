@@ -49,12 +49,13 @@ namespace EDC2015_Trabalho3
                 // rebind the data
                 DataBind();
             }
+
         }
 
         private void InsertProduct(string city, string street, string port, string value)
         {
             XmlDocument xDoc = XmlDataSource2.GetXmlDocument();
-            XmlElement newProperty = xDoc.CreateElement("Property");
+            XmlElement newProperty = xDoc.CreateElement("property");
 
             XmlElement newLand = xDoc.CreateElement("land_register");
 
@@ -73,8 +74,9 @@ namespace EDC2015_Trabalho3
             newAddress.AppendChild(newStreet);
             newAddress.AppendChild(newPort);
 
-            String land = "16";
-            newLand.InnerText = land;
+            XmlNodeList e = xDoc.GetElementsByTagName("land_register");        
+
+            newLand.InnerText = (e.Count+1).ToString();
 
             newValue.InnerText = value;
 
@@ -88,8 +90,33 @@ namespace EDC2015_Trabalho3
 
             propertie.PageIndex = xDoc.DocumentElement.ChildNodes.Count - 1;
 
+            XmlDataSource1.DataBind();
+
+
         }
 
+        protected void propertie_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+            XmlDocument xDoc = XmlDataSource2.GetXmlDocument();
 
+            GridViewRow row = propertie.Rows[e.RowIndex];
+            HyperLink hyper = (HyperLink)row.FindControl("HyperLink2");
+
+            XmlElement property = xDoc.SelectSingleNode("properties/property[land_register/text() = '" + hyper.Text + "']") as XmlElement;
+
+            property.SelectSingleNode("address/city").InnerText = e.NewValues["city"].ToString();
+            property.SelectSingleNode("address/street").InnerText = e.NewValues["street"].ToString();
+            property.SelectSingleNode("address/port_number").InnerText = e.NewValues["port_number"].ToString();
+            property.SelectSingleNode("value").InnerText = e.NewValues["value"].ToString();
+
+
+            XmlDataSource2.Save();
+
+            XmlDataSource2.DataBind();
+            XmlDataSource1.DataBind();
+
+            e.Cancel = true;
+            propertie.EditIndex = -1;
+        }
     }
 }

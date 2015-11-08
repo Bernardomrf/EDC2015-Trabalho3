@@ -13,5 +13,21 @@ namespace EDC2015_Trabalho3
         {
 
         }
+
+        protected void owners_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+
+        }
+
+        protected void owners_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+
+        }
+        protected void AddNewRecord(object sender, EventArgs e)
+        {
+            own.ShowFooter = true;
+            DataBind();
+
+        }
     }
 }

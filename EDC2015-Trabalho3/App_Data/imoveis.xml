@@ -169,13 +169,40 @@
       <owner tax_number="17362641" name="Alvaro Cabral" purchase_date="2005-04-19" sale_date="" />
     </owners>
   </property>
-  <Property>
-    <land_register>16</land_register>
+  <property>
+    <land_register>14</land_register>
     <address>
       <city>Aveiro</city>
       <street>Rua da Universidade</street>
       <port_number>26</port_number>
     </address>
     <value>30000</value>
-  </Property>
+  </property>
+  <property>
+    <land_register>16</land_register>
+    <address>
+      <city>Ovar</city>
+      <street>Rua da Cidade</street>
+      <port_number>123</port_number>
+    </address>
+    <value>334929</value>
+  </property>
+  <property>
+    <land_register>17</land_register>
+    <address>
+      <city>Aveiro</city>
+      <street>Rua da Praca</street>
+      <port_number>324</port_number>
+    </address>
+    <value>400000</value>
+  </property>
+  <property>
+    <land_register>18</land_register>
+    <address>
+      <city>Porto</city>
+      <street>Rua da Universidade</street>
+      <port_number>543</port_number>
+    </address>
+    <value>455555</value>
+  </property>
 </properties>
