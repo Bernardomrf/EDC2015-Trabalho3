@@ -173,6 +173,7 @@
     <Content Include="App_Data\imoveis.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="App_Data\owners.xsl" />
     <Content Include="App_Data\properties.xsl">
       <SubType>Designer</SubType>
     </Content>

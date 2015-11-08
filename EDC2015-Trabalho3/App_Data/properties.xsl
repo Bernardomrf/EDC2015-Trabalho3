@@ -23,19 +23,21 @@
             <xsl:value-of select="value"/>
           </xsl:attribute>
           <owners>
-          <xsl:for-each select="owners">
-            <xsl:attribute name="tax_number">
-              <xsl:value-of select="@tax_number"/>
-            </xsl:attribute>
-            <xsl:attribute name="name">
-              <xsl:value-of select="@name"/>
-            </xsl:attribute>
-            <xsl:attribute name="purchase_date">
-              <xsl:value-of select="@purchase_date"/>
-            </xsl:attribute>
-            <xsl:attribute name="sale_date">
-              <xsl:value-of select="@sale_date"/>
-            </xsl:attribute>
+          <xsl:for-each select="owners/owner">
+            <owner>
+              <xsl:attribute name="tax_number">
+                <xsl:value-of select="@tax_number"/>
+              </xsl:attribute>
+              <xsl:attribute name="name">
+                <xsl:value-of select="@name"/>
+              </xsl:attribute>
+              <xsl:attribute name="purchase_date">
+                <xsl:value-of select="@purchase_date"/>
+              </xsl:attribute>
+              <xsl:attribute name="sale_date">
+                <xsl:value-of select="@sale_date"/>
+              </xsl:attribute>
+            </owner>
           </xsl:for-each>
           </owners>
         </property>

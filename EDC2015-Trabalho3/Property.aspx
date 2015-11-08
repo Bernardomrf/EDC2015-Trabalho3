@@ -55,7 +55,7 @@
             
             <asp:TemplateField>
                 <ItemTemplate>
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "Owner.aspx?ID=" + Eval("land_register")%>'><i class="fa fa-user"></i></asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "Owners.aspx?ID=" + Eval("land_register")%>'><i class="fa fa-user"></i></asp:HyperLink>
                 </ItemTemplate>
 
                 <FooterTemplate>
