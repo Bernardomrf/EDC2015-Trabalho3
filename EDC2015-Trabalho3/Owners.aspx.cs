@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
+using System.Diagnostics;
 
 namespace EDC2015_Trabalho3
 {
@@ -12,9 +13,11 @@ namespace EDC2015_Trabalho3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string url = Request.QueryString["ID"];
+            XmlDataSource1.XPath = "/owners/owner[@land_register = \"" + url + "\"]";
             if (!IsPostBack)
             {
-               string url = Request.QueryString["ID"];
+               
                 if (url != "" || url == null)
                 {
                     XmlDataSource1.XPath = "/owners/owner[@land_register = \"" + url + "\"]";
@@ -26,18 +29,29 @@ namespace EDC2015_Trabalho3
 
         protected void owners_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            string url = Request.QueryString["ID"];
-
+            
             XmlDocument xDoc = XmlDataSource2.GetXmlDocument();
+            string url = Request.QueryString["ID"];
+           
 
             GridViewRow row = own.Rows[e.RowIndex];
+            TextBox tax = (TextBox)row.FindControl("TextBox1");
 
-            XmlElement property = xDoc.SelectSingleNode("properties/property[land_register/text() = '" + url + "']") as XmlElement;
+            XmlElement property = xDoc.SelectSingleNode("properties/property[land_register/text() = \"" + url + "\"]/owners/owner[@tax_number='" + tax.Text + "']") as XmlElement;
 
-            property.SelectSingleNode("address/city").InnerText = e.NewValues["city"].ToString();
-            property.SelectSingleNode("address/street").InnerText = e.NewValues["street"].ToString();
-            property.SelectSingleNode("address/port_number").InnerText = e.NewValues["port_number"].ToString();
-            property.SelectSingleNode("value").InnerText = e.NewValues["value"].ToString();
+
+
+            property.Attributes["name"].Value = e.NewValues["name"].ToString();
+            property.Attributes["tax_number"].Value = e.NewValues["tax_number"].ToString();
+            property.Attributes["purchase_date"].Value = e.NewValues["purchase_date"].ToString();
+            if (e.NewValues["sale_date"] != null)
+            {
+                property.Attributes["sale_date"].Value = e.NewValues["sale_date"].ToString();
+            }
+            else
+            {
+                property.Attributes["sale_date"].Value = "";
+            }
 
 
             XmlDataSource2.Save();
@@ -131,6 +145,28 @@ namespace EDC2015_Trabalho3
             own.ShowFooter = true;
             DataBind();
 
+        }
+
+        protected void own_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            GridViewRow row = own.Rows[e.RowIndex];
+            Debug.WriteLine(row.Cells[0].Text);
+
+            string url = Request.QueryString["ID"];
+            XmlDocument xdoc = XmlDataSource1.GetXmlDocument();
+
+            XmlElement owners = xdoc.SelectSingleNode("properties/property[@land_register='" + url + "']/owners") as XmlElement;
+            XmlElement property = xdoc.SelectSingleNode("properties/property[land_register/text() = \"" + url + "\"]/owners/owner[@tax_number='" + row.Cells[0].Text + "']") as XmlElement;
+            owners.RemoveChild(property);
+
+            XmlDataSource2.Save();
+
+            XmlDataSource2.DataBind();
+            XmlDataSource1.DataBind();
+
+            e.Cancel = true;
+
+            own.DataBind();
         }
     }
 }

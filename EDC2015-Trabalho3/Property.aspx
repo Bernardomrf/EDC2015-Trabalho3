@@ -1,9 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Property.aspx.cs" Inherits="EDC2015_Trabalho3.Properties" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:DropDownList ID="DropDownList1" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" CssClass="form-control" runat="server" AutoPostBack="True" DataSourceID="XmlDataSource3" DataTextField="city" DataValueField="city" Width="259px">
-    </asp:DropDownList>
+    <br />
+    <h2>Lista Imoveis</h2>
+    <hr />
+    <asp:Label ID="Label5" runat="server" Text="Pesquisa por Owner"></asp:Label>
     <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
     <asp:Button ID="Button1" runat="server" Text="Find" OnClick="Button1_Click" />
+    <br />
+    <asp:DropDownList ID="DropDownList1" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" CssClass="form-control" runat="server" AutoPostBack="True" DataSourceID="XmlDataSource3" DataTextField="city" DataValueField="city">
+    </asp:DropDownList>
     <asp:GridView ID="propertie" runat="server" AutoGenerateColumns="False" DataSourceID="XmlDataSource1" GridLines="None" CssClass="table table-strip table-hover" AllowPaging="True" OnRowCommand="property_RowCommand" OnRowUpdating="propertie_RowUpdating">
         <Columns>
             <asp:TemplateField HeaderText="Land Register">

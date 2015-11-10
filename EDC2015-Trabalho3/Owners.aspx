@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Owners.aspx.cs" Inherits="EDC2015_Trabalho3.Owners" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:GridView ID="own" runat="server" AutoGenerateColumns="False" DataSourceID="XmlDataSource1" GridLines="None" CssClass="table table-strip table-hover" AllowPaging="True" OnRowCommand="owners_RowCommand" OnRowUpdating="owners_RowUpdating">
+    <br />
+    <h2>Lista de Donos</h2>
+    <hr />
+    <asp:GridView ID="own" runat="server" AutoGenerateColumns="False" OnRowDeleting="own_RowDeleting"  DataSourceID="XmlDataSource1" GridLines="None" CssClass="table table-strip table-hover" AllowPaging="True" OnRowCommand="owners_RowCommand" OnRowUpdating="owners_RowUpdating">
         <Columns>
             
             <asp:TemplateField HeaderText="Tax Number" SortExpression="tax_number">
@@ -55,6 +58,12 @@
                     <asp:LinkButton ID="btnInsert" runat="Server" Text="Insert" CommandName="Insert" UseSubmitBehavior="False"/>
                 </FooterTemplate>
             </asp:TemplateField>
+            
+
+            <asp:CommandField ShowEditButton="True" />
+            
+
+            <asp:CommandField ShowDeleteButton="True" />
             
 
         </Columns>

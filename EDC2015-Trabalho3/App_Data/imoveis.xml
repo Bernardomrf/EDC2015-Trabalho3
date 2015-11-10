@@ -11,7 +11,7 @@
       <owner tax_number="29812478" name="Alexandre Ribeiro" purchase_date="2009-02-15" sale_date="2015-06-20" />
       <owner tax_number="21339212" name="Bernardo Ferreira" purchase_date="2015-06-20" sale_date="12-10-2015" />
       <owner tax_number="12817326" name="Rafael Ferreira" purchase_date="2015-11-10" sale_date="2015-11-15" />
-      <owner tax_number="98374738" name="Rodrigo Cunha" purchase_date="2015-11-15" sale_date="" />
+      <owner tax_number="98374738" name="Rodrigo Cunha" purchase_date="2015-11-15" sale_date="2015-12-12" />
     </owners>
   </property>
   <property>
@@ -24,6 +24,7 @@
     <value>500000</value>
     <owners>
       <owner tax_number="23992948" name="Guilherme Sousa" purchase_date="2012-05-21" sale_date="12-10-2015" />
+      <owner tax_number="43214231" name="Bruno Ferreira" purchase_date="2015-12-12" sale_date="" />
     </owners>
   </property>
   <property>
