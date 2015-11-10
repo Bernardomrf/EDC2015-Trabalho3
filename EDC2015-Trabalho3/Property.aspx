@@ -68,7 +68,7 @@
                 </ItemTemplate>
 
                 <FooterTemplate>
-                    <asp:LinkButton ID="btnInsert" runat="Server" Text="Insert" CommandName="Insert" UseSubmitBehavior="False"/>
+                    <asp:LinkButton ID="btnInsert" runat="Server" CommandName="Insert" UseSubmitBehavior="False"><i class="fa fa-floppy-o"></i></asp:LinkButton>
                 </FooterTemplate>
 
 
@@ -88,7 +88,7 @@
             </div>
         </EmptyDataTemplate>
     </asp:GridView>
-    <asp:LinkButton ID="btnAdd" runat="server" Text="Add" OnClick="AddNewRecord" />
+    <asp:LinkButton ID="btnAdd" runat="server" OnClick="AddNewRecord"><i class="fa fa-plus fa-3"></i></asp:LinkButton>
 
     <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/App_Data/imoveis.xml" TransformFile="~/App_Data/properties.xsl" EnableCaching="False"></asp:XmlDataSource>
     <asp:XmlDataSource ID="XmlDataSource2" runat="server" DataFile="~/App_Data/imoveis.xml" EnableCaching="False"></asp:XmlDataSource>
