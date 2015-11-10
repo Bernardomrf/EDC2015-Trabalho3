@@ -150,14 +150,16 @@ namespace EDC2015_Trabalho3
         protected void own_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             GridViewRow row = own.Rows[e.RowIndex];
-            Debug.WriteLine(row.Cells[0].Text);
+
+            Label tax = (Label)row.FindControl("label1");
 
             string url = Request.QueryString["ID"];
-            XmlDocument xdoc = XmlDataSource1.GetXmlDocument();
+            XmlDocument xdoc = XmlDataSource2.GetXmlDocument();
 
-            XmlElement owners = xdoc.SelectSingleNode("properties/property[@land_register='" + url + "']/owners") as XmlElement;
-            XmlElement property = xdoc.SelectSingleNode("properties/property[land_register/text() = \"" + url + "\"]/owners/owner[@tax_number='" + row.Cells[0].Text + "']") as XmlElement;
-            owners.RemoveChild(property);
+            XmlElement owners = xdoc.SelectSingleNode("properties/property/owners[../land_register/text()='" + url + "']") as XmlElement;
+            XmlElement owner = owners.SelectSingleNode("owner[@tax_number='" + tax.Text + "']") as XmlElement;
+
+            owners.RemoveChild(owner);
 
             XmlDataSource2.Save();
 
