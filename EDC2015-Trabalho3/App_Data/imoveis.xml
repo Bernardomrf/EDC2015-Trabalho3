@@ -10,6 +10,8 @@
     <owners>
       <owner tax_number="29812478" name="Alexandre Ribeiro" purchase_date="2009-02-15" sale_date="2015-06-20" />
       <owner tax_number="21339212" name="Bernardo Ferreira" purchase_date="2015-06-20" sale_date="12-10-2015" />
+      <owner tax_number="12817326" name="Rafael Ferreira" purchase_date="2015-11-10" sale_date="2015-11-15" />
+      <owner tax_number="98374738" name="Rodrigo Cunha" purchase_date="2015-11-15" sale_date="" />
     </owners>
   </property>
   <property>
@@ -83,7 +85,7 @@
     <owners>
       <owner tax_number="81735621" name="Rui Ferreira" purchase_date="2003-01-29" sale_date="2015-10-21" />
       <owner tax_number="17394729" name="Bruno Silva" purchase_date="2015-10-21" sale_date="2015-12-10" />
-      <owner tax_number="73417367" name="Beatriz Silva" purchase_date="2015-12-10" sale_date="" />
+      <owner tax_number="73417367" name="Beatriz Silva" purchase_date="2015-12-10" sale_date="2015-11-10" />
     </owners>
   </property>
   <property>
@@ -205,5 +207,14 @@
       <port_number>543</port_number>
     </address>
     <value>455555</value>
+  </property>
+  <property>
+    <land_register>19</land_register>
+    <address>
+      <city>Aveiro</city>
+      <street>Rua da Casa</street>
+      <port_number>33</port_number>
+    </address>
+    <value>210000</value>
   </property>
 </properties>

@@ -26,7 +26,27 @@ namespace EDC2015_Trabalho3
 
         protected void owners_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
+            string url = Request.QueryString["ID"];
 
+            XmlDocument xDoc = XmlDataSource2.GetXmlDocument();
+
+            GridViewRow row = own.Rows[e.RowIndex];
+
+            XmlElement property = xDoc.SelectSingleNode("properties/property[land_register/text() = '" + url + "']") as XmlElement;
+
+            property.SelectSingleNode("address/city").InnerText = e.NewValues["city"].ToString();
+            property.SelectSingleNode("address/street").InnerText = e.NewValues["street"].ToString();
+            property.SelectSingleNode("address/port_number").InnerText = e.NewValues["port_number"].ToString();
+            property.SelectSingleNode("value").InnerText = e.NewValues["value"].ToString();
+
+
+            XmlDataSource2.Save();
+
+            XmlDataSource2.DataBind();
+            XmlDataSource1.DataBind();
+
+            e.Cancel = true;
+            own.EditIndex = -1;
         }
 
         protected void owners_RowCommand(object sender, GridViewCommandEventArgs e)

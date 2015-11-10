@@ -12,7 +12,11 @@ namespace EDC2015_Trabalho3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                XmlDataSource1.XPath = "/properties/property[@city='" + DropDownList1.SelectedValue + "']";
 
+            }
         }
 
         protected void Unnamed1_RowUpdated(object sender, GridViewUpdatedEventArgs e)
@@ -23,6 +27,8 @@ namespace EDC2015_Trabalho3
         protected void AddNewRecord(object sender, EventArgs e)
         {
             propertie.ShowFooter = true;
+            XmlDataSource1.XPath = "/properties/property[@city='" + DropDownList1.SelectedValue + "']";
+
             DataBind();
 
         }
@@ -117,6 +123,16 @@ namespace EDC2015_Trabalho3
 
             e.Cancel = true;
             propertie.EditIndex = -1;
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            XmlDataSource1.XPath = "/properties/property[@city='" + DropDownList1.SelectedValue + "']";
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            XmlDataSource1.XPath = "/properties/property[owners/owner/@tax_number='" + TextBox5.Text + "']";
         }
     }
 }
