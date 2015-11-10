@@ -14,9 +14,9 @@ namespace EDC2015_Trabalho3
         {
             if (!IsPostBack)
             {
-                XmlDataSource1.XPath = "/properties/property[@city='" + DropDownList1.SelectedValue + "']";
-
+                XmlDataSource1.XPath = "/properties/property[@city='Albufeira']";
             }
+            
         }
 
         protected void Unnamed1_RowUpdated(object sender, GridViewUpdatedEventArgs e)

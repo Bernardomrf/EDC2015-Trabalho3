@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
 using System.Diagnostics;
+using System.Data;
 
 namespace EDC2015_Trabalho3
 {
@@ -76,11 +77,16 @@ namespace EDC2015_Trabalho3
                 //insert the new product
                 InsertProduct(tax.Text, name.Text, purchase.Text);
 
-                //hide the footer
-                own.ShowFooter = false;
+                XmlDataSource1.DataBind();
 
-                // rebind the data
-                DataBind();
+                own.DataSource = null;
+                own.DataSourceID = "XmlDataSource1";
+                own.ShowFooter = false;
+                own.DataBind();
+
+
+
+
             }
         }
 
@@ -132,19 +138,52 @@ namespace EDC2015_Trabalho3
             {
                 XmlDataSource1.XPath = "/owners/owner[@land_register = \"" + url + "\"]";
             }
+
+            
+            DataBind();
         }
 
         protected void AddNewRecord(object sender, EventArgs e)
         {
             string url = Request.QueryString["ID"];
-            if (url != "" || url == null)
+            if (url != "" || url != null)
             {
                 XmlDataSource1.XPath = "/owners/owner[@land_register = \"" + url + "\"]";
 
             }
-            own.ShowFooter = true;
-            DataBind();
 
+            own.ShowFooter = true;
+
+
+            if (own.Rows.Count == 0)
+            {
+                DataTable dt = new DataTable();
+                if (dt.Columns.Count == 0)
+                {
+                    dt.Columns.Add("name", typeof(string));
+                    dt.Columns.Add("tax_number", typeof(string));
+                    dt.Columns.Add("purchase_date", typeof(string));
+                    dt.Columns.Add("sale_date", typeof(string));
+                    dt.Columns.Add("land_register", typeof(string));
+
+                }
+
+                DataRow NewRow = dt.NewRow();
+                NewRow[0] = "";
+                NewRow[1] = "";
+                dt.Rows.Add(NewRow);
+                own.DataSource = dt;
+                own.DataSourceID = null;
+                own.DataBind();
+                own.Rows[0].Visible = false;
+            }
+            else
+            {
+                own.DataSource = null;
+                own.DataBind();
+            }
+
+            
         }
 
         protected void own_RowDeleting(object sender, GridViewDeleteEventArgs e)
