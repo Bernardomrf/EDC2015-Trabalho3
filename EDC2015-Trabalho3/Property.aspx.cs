@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -55,6 +56,10 @@ namespace EDC2015_Trabalho3
                 // rebind the data
                 DataBind();
             }
+            if (e.CommandName.Equals("Edit"))
+            {
+
+            }
 
         }
 
@@ -104,6 +109,7 @@ namespace EDC2015_Trabalho3
         protected void propertie_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
             XmlDocument xDoc = XmlDataSource2.GetXmlDocument();
+
 
             GridViewRow row = propertie.Rows[e.RowIndex];
             HyperLink hyper = (HyperLink)row.FindControl("HyperLink2");

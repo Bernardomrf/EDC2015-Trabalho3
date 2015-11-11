@@ -60,10 +60,20 @@
             </asp:TemplateField>
             
 
-            <asp:CommandField ShowEditButton="True" />
-            
-
-            <asp:CommandField ShowDeleteButton="True" />
+            <asp:TemplateField ShowHeader="False">
+                <EditItemTemplate>
+                    <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="True" CommandName="Update" Text="Update"><i class="fa fa-floppy-o"></i></asp:LinkButton>
+                    &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel"><i class="fa fa-ban"></i></asp:LinkButton>
+                </EditItemTemplate>
+                <ItemTemplate>
+                    <asp:LinkButton ID="LinkButton3" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit"><i class="fa fa-pencil"></i></asp:LinkButton>
+                </ItemTemplate>
+            </asp:TemplateField>
+            <asp:TemplateField ShowHeader="False">
+                <ItemTemplate>
+                    <asp:LinkButton ID="LinkButton4" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete"><i class="fa fa-trash-o"></i></asp:LinkButton>
+                </ItemTemplate>
+            </asp:TemplateField>
             
 
         </Columns>
@@ -82,7 +92,7 @@
 
     </asp:GridView>
 
-    <asp:LinkButton ID="btnAdd" runat="server" Text="Add" OnClick="AddNewRecord" />
+    <asp:LinkButton ID="btnAdd" runat="server" OnClick="AddNewRecord"><i class="fa fa-plus fa-3"></i></asp:LinkButton>
 
     <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/App_Data/imoveis.xml" TransformFile="~/App_Data/owners.xsl" EnableCaching="False"></asp:XmlDataSource>
     <asp:XmlDataSource ID="XmlDataSource2" runat="server" DataFile="~/App_Data/imoveis.xml" EnableCaching="False"></asp:XmlDataSource>

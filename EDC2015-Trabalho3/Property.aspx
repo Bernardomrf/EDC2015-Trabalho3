@@ -2,14 +2,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <br />
     <h2>Lista Imoveis</h2>
-    <hr />
     <asp:Label ID="Label5" runat="server" Text="Pesquisa por Owner"></asp:Label>
+    &nbsp;&nbsp;
     <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+    &nbsp;&nbsp;
     <asp:Button ID="Button1" runat="server" Text="Find" OnClick="Button1_Click" />
+    <hr />
     <br />
-    <asp:DropDownList ID="DropDownList1" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" CssClass="form-control" runat="server" AutoPostBack="True" DataSourceID="XmlDataSource3" DataTextField="city" DataValueField="city">
+    <asp:DropDownList ID="DropDownList1"  OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" CssClass="form-control" runat="server" AutoPostBack="True" DataSourceID="XmlDataSource3" DataTextField="city" DataValueField="city">
     </asp:DropDownList>
-    <asp:GridView ID="propertie" runat="server" AutoGenerateColumns="False" DataSourceID="XmlDataSource1" GridLines="None" CssClass="table table-strip table-hover" AllowPaging="True" OnRowCommand="property_RowCommand" OnRowUpdating="propertie_RowUpdating">
+    <asp:GridView ID="propertie" runat="server" AutoGenerateColumns="False" DataSourceID="XmlDataSource1" GridLines="None" CssClass="table table-strip table-hover" AllowPaging="True" OnRowCommand="property_RowCommand"  OnRowUpdating="propertie_RowUpdating">
         <Columns>
             <asp:TemplateField HeaderText="Land Register">
                 <ItemTemplate>
@@ -60,7 +62,15 @@
                     <asp:Label ID="Label4" runat="server" Text='<%# Bind("value", "{0:C2}") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
-            <asp:CommandField ShowEditButton="true" />
+            <asp:TemplateField ShowHeader="False">
+                <EditItemTemplate>
+                    <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="True" CommandName="Update" Text="Update"><i class="fa fa-floppy-o"></i></asp:LinkButton>
+                    &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel"><i class="fa fa-ban"></i></asp:LinkButton>
+                </EditItemTemplate>
+                <ItemTemplate>
+                    <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit"><i class="fa fa-pencil"></i></asp:LinkButton>
+                </ItemTemplate>
+            </asp:TemplateField>
             
             <asp:TemplateField>
                 <ItemTemplate>

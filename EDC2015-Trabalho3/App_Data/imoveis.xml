@@ -78,10 +78,10 @@
     <land_register>1</land_register>
     <address>
       <city>Aveiro</city>
-      <street>Rua da Estação</street>
+      <street>Rua da Estação 2</street>
       <port_number>15</port_number>
     </address>
-    <value>50000</value>
+    <value>599999</value>
     <owners>
       <owner tax_number="81735621" name="Rui Ferreira" purchase_date="2003-01-29" sale_date="2015-10-21" />
       <owner tax_number="17394729" name="Bruno Silva" purchase_date="2015-10-21" sale_date="2015-12-10" />
@@ -109,7 +109,7 @@
     </address>
     <value>250000</value>
     <owners>
-      <owner tax_number="82615153" name="Sérgio Silva" purchase_date="2014-03-11" sale_date="2015-12-3" />
+      <owner tax_number="82615153" name="Sérgio Silv" purchase_date="2014-03-11" sale_date="2015-12-3" />
     </owners>
   </property>
   <property>
@@ -181,7 +181,7 @@
     </address>
     <value>30000</value>
     <owners>
-      <owner tax_number="12386739" name="Joana Silva" purchase_date="2015-6-4" sale_date="" />
+      <owner tax_number="12386739" name="Joana Silva" purchase_date="2015-6-4" sale_date="2015-12-20" />
     </owners>
   </property>
   <property>
@@ -224,6 +224,28 @@
     <value>210000</value>
     <owners>
       <owner tax_number="47236478" name="João Alves" purchase_date="2015-12-3" sale_date="" />
+    </owners>
+  </property>
+  <property>
+    <land_register>20</land_register>
+    <address>
+      <city>Cascais</city>
+      <street>Quinta do Vilar</street>
+      <port_number>2</port_number>
+    </address>
+    <value>600000</value>
+  </property>
+  <property>
+    <land_register>21</land_register>
+    <address>
+      <city>Aveiro</city>
+      <street>Rua de Cima</street>
+      <port_number>99</port_number>
+    </address>
+    <value>999999</value>
+    <owners>
+      <owner tax_number="123456678" name="Bernardo" purchase_date="2015-12-12" sale_date="" />
+      <owner tax_number="8638721638" name="Bruno" purchase_date="2015-12-20" sale_date="" />
     </owners>
   </property>
 </properties>
